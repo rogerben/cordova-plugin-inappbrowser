@@ -15,7 +15,7 @@
        under the License.
 */
 package org.apache.cordova.inappbrowser;
-
+import android.R;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
