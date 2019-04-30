@@ -31,7 +31,7 @@ public class InAppBrowserDialog extends Dialog {
     InAppBrowser inAppBrowser = null;
 
     public InAppBrowserDialog(Context context, int theme) {
-        super(context,  R.style.full_screen_dialog);
+        super(context, theme);
         this.context = context;
     }
 
