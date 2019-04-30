@@ -33,7 +33,7 @@ public class InAppBrowserDialog extends Dialog {
     InAppBrowser inAppBrowser = null;
 
     public InAppBrowserDialog(Context context, int theme) {
-        super(context, theme);
+        super(context, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
         this.context = context;
     }
 
