@@ -705,7 +705,7 @@ public class InAppBrowser extends CordovaPlugin {
                 dialog = new InAppBrowserDialog(cordova.getActivity(), android.R.style.Theme_NoTitleBar);
                 dialog.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
                    
-                int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+                int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
                 dialog.getWindow().getDecorView().setSystemUiVisibility(uiOptions);
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog.setCancelable(true);
