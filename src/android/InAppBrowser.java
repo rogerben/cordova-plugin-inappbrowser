@@ -788,8 +788,8 @@ public class InAppBrowser extends CordovaPlugin {
       
                 dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 //custom
-                int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-                dialog.getWindow().getDecorView().setSystemUiVisibility(uiOptions);
+                //int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+                // dialog.getWindow().getDecorView().setSystemUiVisibility(uiOptions);
                 //custom     
                 dialog.setCancelable(true);
                 dialog.setInAppBroswer(getInAppBrowser());
