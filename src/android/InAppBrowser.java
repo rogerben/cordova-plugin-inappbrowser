@@ -781,7 +781,9 @@ public class InAppBrowser extends CordovaPlugin {
                 };
 
                 // Let's create the main dialog
-                dialog = new InAppBrowserDialog(cordova.getActivity(), android.R.layout.fullscreen);
+                dialog = new InAppBrowserDialog(cordova.getActivity(), android.R.style.AppBaseTheme);
+                      
+     
                 dialog.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                   
@@ -793,8 +795,9 @@ public class InAppBrowser extends CordovaPlugin {
                 dialog.getWindow().getDecorView().setSystemUiVisibility(uiOptions);
                 //custom     
                 dialog.setCancelable(true);
+                  dialog.setContentView(R.layout.fullscreen);
                 dialog.setInAppBroswer(getInAppBrowser());
-
+                     
                 // Main container layout
                 LinearLayout main = new LinearLayout(cordova.getActivity());
                 main.setOrientation(LinearLayout.VERTICAL);
